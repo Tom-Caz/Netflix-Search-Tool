@@ -7,8 +7,8 @@ Imports the data with a self made .csv file importer.
 
 HOW TO USE:
 Run the client program. Type 'A' to add a filter, 'R' to remove a filter, 'L' to list all matching titles. and 'Q' to quit.
-|
-|
+
+
   ADDING FILTERS:
   
   There are a selection of filters you can add. Type the desired filter first selection first then your filter. (Not case sensitive)
