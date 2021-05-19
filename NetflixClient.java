@@ -30,23 +30,22 @@ public class NetflixClient extends DataFileParser{
 		System.out.print("\nEnter new filter: ");
 		String input = scnr.nextLine();
 		input = input.toLowerCase();	
-		if (input.equals("movie") || input.equals("series"))										// Type
+		if (input.equals("movie") || input.equals("series"))								// Type
 			curFilter.setType(input);
 		else if (input.length() > 6 && input.substring(0,5).equals("title"))						// Title
 			curFilter.setTitle(input.substring(6));	
 		else if (input.length() > 9 && input.substring(0,8).equals("director"))						// Director
 			curFilter.setDir(input.substring(9));
-		else if (input.length() > 6 && input.substring(0,4).equals("cast"))							// Cast
+		else if (input.length() > 6 && input.substring(0,4).equals("cast"))						// Cast
 			curFilter.setCast(input.substring(5));	
 		else if (input.length() > 8 && input.substring(0,7).equals("country"))						// Country
 			curFilter.setCountry(input.substring(8));
 		else if (input.length() > 7 && input.substring(0,6).equals("rating")){						// Rating
 			curFilter.setRating(input.substring(7));
-			System.out.println(input.substring(7) + "test");
 		}
 		else if (input.length() > 6 && input.substring(0,5).equals("genre"))						// Genre
 			curFilter.setGenre(input.substring(6));
-		else if (input.length() > 5 && input.substring(0,4).equals("year"))							// Year
+		else if (input.length() > 5 && input.substring(0,4).equals("year"))						// Year
 			curFilter.setYear(Integer.parseInt(input.replaceAll("\\D+", "")));
 		else if (input.length() > 8 && input.substring(0,7).equals("runtime"))						// Runtime
 			curFilter.setDur(Integer.parseInt(input.replaceAll("\\D+", "")));
