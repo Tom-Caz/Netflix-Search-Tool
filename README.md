@@ -1,4 +1,5 @@
 # Netflix-Search-Tool
+Basic search tool
 Allows the user to search Netflix titles as of January 2021.
 
 
